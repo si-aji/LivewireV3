@@ -13,6 +13,5 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', \App\Livewire\Homepage\Index::class)->name('index');
+Route::get('profile', \App\Livewire\Profile\Index::class)->name('profile.index');
